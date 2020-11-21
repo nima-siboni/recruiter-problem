@@ -58,7 +58,7 @@ def find_the_best(input_events, n_exploring, choosing_method):
         criteria_i = criterion_exploration[i]
         for j in range(nr_remaining_candidates):
             if ((finished is False) and (choosing_data[i][j] > criteria_i)):
-                output_chosen[i] = choosing_data[i][j]+0
+                output_chosen[i] = choosing_data[i][j] + 0
                 finished = True
     return output_chosen
 
@@ -68,6 +68,9 @@ def evaluations(input_chosen, input_events):
 
     ultimate_best = np.max(input_events, axis=1)
     ultimate_best = np.reshape(ultimate_best, np.shape(input_chosen))
-    #print(np.equal(ultimate_best, input_chosen))
     return np.mean(np.equal(ultimate_best, input_chosen))
 
+
+def evaluations_reward(input_chosen):
+    """ evaluation of the how good were the chosen ones by the value of the chosen one"""
+    return np.mean(input_chosen)

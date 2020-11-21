@@ -23,7 +23,7 @@ DISTRIBUTION -- the random distribution from which the samples are drawn.
 import random
 import numpy as np
 from environement import create_samples
-from environement import evaluations
+from environement import evaluations, evaluations_reward
 from environement import find_the_best
 from plotter import plot
 
@@ -36,14 +36,14 @@ random.seed(1)
 
 # 1
 
-events = create_samples(N_HIRINGS, N_CANDIDATES, 'pareto')
+events = create_samples(N_HIRINGS, N_CANDIDATES, 'uniform')
 results = np.zeros((N_CANDIDATES - 1, 2))
 
 # 2
 
 for stopping_id in range(1, N_CANDIDATES):
     chosen = find_the_best(events, stopping_id, choosing_method=CHOOSING_METHOD)
-    results[stopping_id - 1] = [stopping_id, evaluations(chosen, events)]
+    results[stopping_id - 1] = [stopping_id, evaluations_reward(chosen)]
 
 # 3
 
