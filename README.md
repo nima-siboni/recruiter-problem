@@ -1,4 +1,4 @@
-# recruiter-problem
+# Recruiter-problem
 
 The recuiter problem (also known as the marriage problem, the sultan's dowry problem, the fussy suitor problem, and secretary problem) is a problem that demonstrates a scenario involving optimal stopping theory.
 
