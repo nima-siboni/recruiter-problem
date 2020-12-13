@@ -65,12 +65,10 @@ DISTRIBUTION -- which can be 'uniform', 'normal', 'pareto'.
 It refers to the distribution of the candidates.
 ```
 
-Here is an example for a hiring process where the expected number of applicants are 
+The example shown in the results sections have the following parameters: 
 ```
 N_HIRINGS = 5_000
 N_CANDIDATES = 20
 CHOOSING_METHOD = 'max'
 DISTRIBUTION = 'random'
 ```
-
-![](results.png)
