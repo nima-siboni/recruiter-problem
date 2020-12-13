@@ -19,7 +19,7 @@ The optimal strategy for the recruitment problem is a stopping rule: here, the f
 
 * At the beginning the recruiter does not know about the quality of the possible candidates, i.e. it does not know what is the score of a "good" candidate, and what is the score of a "bad" candidate. This problem can be elevated by interviewing more and more candidates; exploring more candidates lead to better understanding of what scores are available in the market. So to gain information about the score distribution of the candidates, the recruiter should interview as many candidates as it can (which means rejecting as many candidates as it can, in our problem).
 
-* Although many rejections leads to good understanding of market, unfortunately it does not leave many candidates to choose from. In other words, if you reject most of the candidates, you have a good idea of what is a good candidate, but not many candidates are left for you to choose from. 
+* Although many rejections leads to a good understanding of the market, unfortunately it does not leave many candidates to choose from. In other words, if you reject most of the candidates, you have a good idea of what is a good candidate, but not many candidates are left for you to choose from. 
 
 As one can see, here the recruiter should find a balance between **exploring the market** and **exploiting the knowledge** it has. This balance manifests itself in an optimal stopping point for the exploring phase.
 
@@ -29,7 +29,7 @@ In this project, a python code is developed to find the optimal stopping point u
 
 ## Results 
 
-Here is an example, for which one can see that the 1/e rule applies. Here, we have N=20 candidates, and the probabilty of finding the best candidate reaches its maximum when the first 7-8 candidates are rejected (for exploration reasons).
+Here is an example, for which one can see that the 1/e rule applies. Here, we have N=20 candidates, and the probability of finding the best candidate reaches its maximum when the first 7-8 candidates are rejected (for exploration reasons).
 
 ![](results.png)
 
