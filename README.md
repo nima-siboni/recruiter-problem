@@ -15,7 +15,13 @@ The basic version of the problemn can be stated as follows [[1]](https://en.wiki
 
 ## Optimal stopping point and 1/e law
 
-The optimal strategy for the recruitment problem is a stopping rule: here, the first n candidates are rejected, and after that the candidate who is better than the previous candidates is chosen. Intuitively, one can understand this strategy as explained here: at the beginning the recruiter does not know about the quality of the possible candidates, i.e. it does not know what is the score of a "good" candidate, and what is the score of a "bad" candidate. This problem can be elevated by interviewing more and more candidates; exploring more candidates lead to better understanding of what scores are available in the market. So to gain information about the score distribution of the candidates, the recruiter should interview as many candidates as it can (which means rejecting as many candidates as it can, in our problem). Although many rejections leads to good understanding of market, unfortunately it does not leave many candidates to choose from. In other words, if you reject most of the candidates, you have a good idea of what is a good candidate, but not many candidates are left for you to choose from. 
+The optimal strategy for the recruitment problem is a stopping rule: here, the first n candidates are rejected, and after that the candidate who is better than the previous candidates is chosen. Intuitively, one can understand this strategy as explained here: 
+
+* At the beginning the recruiter does not know about the quality of the possible candidates, i.e. it does not know what is the score of a "good" candidate, and what is the score of a "bad" candidate. This problem can be elevated by interviewing more and more candidates; exploring more candidates lead to better understanding of what scores are available in the market. So to gain information about the score distribution of the candidates, the recruiter should interview as many candidates as it can (which means rejecting as many candidates as it can, in our problem).
+
+* Although many rejections leads to good understanding of market, unfortunately it does not leave many candidates to choose from. In other words, if you reject most of the candidates, you have a good idea of what is a good candidate, but not many candidates are left for you to choose from. 
+
+As one can see, here the recruiter should find a balance between exploring the market and exploiting the knowledge it has. There should be an optimal stopping point for the initial rejection which make
 
 
 In this project a python code is developed to find the optimal stopping point (stopping point refers to how many applicant are rejected immediately). The method used here is simple Monte-Carlo method.
