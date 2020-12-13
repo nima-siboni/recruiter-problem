@@ -27,17 +27,24 @@ Interestingly, one can show that, to maximize the chance of finding the best can
 
 In this project, a python code is developed to find the optimal stopping point using a simple Monte-Carlo approach.
 
-## results 
+## Results 
 
+Here is an example, for which one can see that the 1/e rule applies. Here, we have N=20 candidates, and the probabilty of finding the best candidate reaches its maximum when the first 7-8 candidates are rejected (for exploration reasons).
 
-## requirements
+![](results.png)
+
+As a side note, it is worth mentioning that the optimal stopping point would be different if the goal was to maximize the expected score of the chosen candidates (instead of increasing the probability of choosing the best candidate). This has been shown here, in the following figure.
+
+![](results-expected-reward.png)
+
+## Requirements
 ```
 python3
 numpy 
 matplotlib
 ```
 
-## running the code
+## Running the code
 The script is executed with
 ```
 python3 MC.py
