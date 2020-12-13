@@ -5,7 +5,7 @@ The recuiter problem (also known as the marriage problem, the sultan's dowry pro
 The basic version of the problemn can be stated as follows [[1]](https://en.wikipedia.org/wiki/Secretary_problem): 
 
 * There is a single position to fill.
-* There are n applicants for the position, and the value of n is known.
+* There are N applicants for the position, and the value of N is known.
 * The applicants, if seen altogether, can be ranked from best to worst unambiguously.
 * The applicants are interviewed sequentially in random order, with each order being equally likely.
 * Immediately after an interview, the interviewed applicant is either accepted or rejected, and the decision is irrevocable.
@@ -21,10 +21,12 @@ The optimal strategy for the recruitment problem is a stopping rule: here, the f
 
 * Although many rejections leads to good understanding of market, unfortunately it does not leave many candidates to choose from. In other words, if you reject most of the candidates, you have a good idea of what is a good candidate, but not many candidates are left for you to choose from. 
 
-As one can see, here the recruiter should find a balance between exploring the market and exploiting the knowledge it has. There should be an optimal stopping point for the initial rejection which make
+As one can see, here the recruiter should find a balance between **exploring the market** and **exploiting the knowledge** it has. This balance manifests itself in an optimal stopping point for the exploring phase.
 
+Interestingly, one can show that, to maximize the chance of finding the best candidate, one should explore 1/e percent of the candidates (approx. 37 %) at the beginning and then pick the first candidate who is better than the best candidate so far. This is referred to as 1/e law.
 
-In this project a python code is developed to find the optimal stopping point (stopping point refers to how many applicant are rejected immediately). The method used here is simple Monte-Carlo method.
+In this project, a python code is developed to find the optimal stopping point using a simple Monte-Carlo approach.
+
 ## results 
 
 
