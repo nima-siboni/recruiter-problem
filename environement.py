@@ -64,7 +64,9 @@ def find_the_best(input_events, n_exploring, choosing_method):
 
 
 def evaluations(input_chosen, input_events):
-    """ evaluation of the how good were the chosen ones"""
+    """ evaluation of the how good were the chosen ones:
+    if the best one is chosen.
+    """
 
     ultimate_best = np.max(input_events, axis=1)
     ultimate_best = np.reshape(ultimate_best, np.shape(input_chosen))
@@ -72,5 +74,7 @@ def evaluations(input_chosen, input_events):
 
 
 def evaluations_reward(input_chosen):
-    """ evaluation of the how good were the chosen ones by the value of the chosen one"""
+    """ evaluation of the how good were the chosen ones:
+    by the value of the chosen one.
+    """
     return np.mean(input_chosen)

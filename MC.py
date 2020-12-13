@@ -49,8 +49,8 @@ for stopping_id in range(1, N_CANDIDATES):
 
 np.savetxt('results.dat', results)
 plot(results,
-     title="Probability of finding the best candidate vs. stopping point",
+     title="average score of the hired candidates vs. stopping point",
      xlabel="Stopping point",
-     ylabel="Probability",
+     ylabel="(ave.) Score",
      xtics=1,
      filename="./results.png")
